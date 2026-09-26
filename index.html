@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema Experto - Diagnóstico de Hardware y Software</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🛠️ ExpertFix System</h1>
+      <p>Sistema Experto para el Diagnóstico Técnico de Hardware y Software</p>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h2>1. Selecciona los síntomas detectados</h2>
+        <div id="symptoms-container" class="symptoms-grid">
+          <!-- Renderizado dinámico desde TypeScript -->
+        </div>
+        <div class="actions">
+          <button id="btn-diagnose" class="btn btn-primary">Analizar Fallas</button>
+          <button id="btn-reset" class="btn btn-secondary">Limpiar Selección</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>2. Diagnóstico y Recomendaciones</h2>
+        <div id="results-container">
+          <p style="color: var(--text-muted)">Selecciona síntomas y haz clic en "Analizar Fallas" para ver los resultados.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
