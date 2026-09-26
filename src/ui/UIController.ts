@@ -85,7 +85,7 @@ export class UIController {
         <p>${res.diagnosis.description}</p>
         <h4 style="margin-top: 0.8rem; font-size: 0.95rem;">Soluciones recomendadas:</h4>
         <ul class="solutions-list">
-          ${res.diagnosis.solutions.map(sol => `<li>${sol}</li>`).join('')}
+          ${res.diagnosis.solutions.map((sol: string) => `<li>${sol}</li>`).join('')}
         </ul>
       </div>
     `).join('');
